@@ -1,5 +1,5 @@
 // CharacterFactory to Funkcja Wytwórcza
-import { characterFactory } from './characterFactory';
+import { characterFactory } from '../factory-function/characterFactory.js';
 
 const humanPlayer = characterFactory({
     type: 'human',
@@ -30,7 +30,7 @@ shopNPC.renderOnMap({
 });
 
 // możemy użyć współdzielone metody
-for (const player in players) {
+for (const player of players) {
     player.renderOnMap({
         x: Math.random() * 10,
         y: Math.random() * 10
