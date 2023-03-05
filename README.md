@@ -1,0 +1,1 @@
+# article-patterns-js-factory-method
