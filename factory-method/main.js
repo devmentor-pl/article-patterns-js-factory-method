@@ -9,13 +9,13 @@ const humanCharacter = creator.create('player');
 // korzystam z metody wytwórczej
 const shopNPC = creator.create('npc');
 
-// używam wspólnych metod
+// używam wspólnej metody
 shopNPC.renderOnMap({
     x: 10,
     y: 10
 });
 
-// używam wspólnych metod
+// używam wspólnej metody
 humanCharacter.renderOnMap({
     x: 0,
     y: 0

@@ -4,6 +4,6 @@ export class CharacterInterface {
     }
 
     renderOnMap(location) {
-        throw new Error('renderOnMap Not implemented');
+        throw new Error('renderOnMap not implemented');
     }
 }
