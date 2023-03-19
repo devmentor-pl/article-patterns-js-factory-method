@@ -4,7 +4,7 @@ import { CharacterCreator } from './classes/CharacterCreator.js';
 const creator = new CharacterCreator();
 
 // korzystam z metody wytwórczej
-const humanPlayer = creator.create('player');
+const humanCharacter = creator.create('player');
 
 // korzystam z metody wytwórczej
 const shopNPC = creator.create('npc');
@@ -16,7 +16,7 @@ shopNPC.renderOnMap({
 });
 
 // używam wspólnych metod
-humanPlayer.renderOnMap({
+humanCharacter.renderOnMap({
     x: 0,
     y: 0
 });

@@ -1,7 +1,7 @@
-// CharacterFactory to Funkcja Wytwórcza
+// CharacterFactory to funkcja wytwórcza
 import { characterFactory } from '../factory-function/characterFactory.js';
 
-const humanPlayer = characterFactory({
+const humanCharacter = characterFactory({
     type: 'human',
     level: 0,
     money: 0,
@@ -15,23 +15,23 @@ const shopNPC = characterFactory({
 });
 
 // dzięki wspólnym cechom obiektów możemy je grupować
-const players = [humanPlayer, shopNPC];
+const characters = [humanCharacter, shopNPC];
 
-// możemy użyć współdzielone metody
-humanPlayer.renderOnMap({
+// możemy użyć tej samej metody
+humanCharacter.renderOnMap({
     x: 0,
     y: 0
 });
 
-// możemy użyć współdzielone metody
+// możemy użyć tej samej metody
 shopNPC.renderOnMap({
     x: 10,
     y: 10
 });
 
-// możemy użyć współdzielone metody
-for (const player of players) {
-    player.renderOnMap({
+// możemy wykorzystać fakt, że metody są współdzielone
+for (const character of characters) {
+    character.renderOnMap({
         x: Math.random() * 10,
         y: Math.random() * 10
     });
